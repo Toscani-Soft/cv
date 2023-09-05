@@ -1,0 +1,175 @@
+/* -------Tous les medias--------- */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #e3f2fd;
+    margin: 0;
+    padding: 0;
+}
+.bg-primary {
+    background-color: #0d47a1 !important;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid .heading {
+    padding-top: 4rem;
+}
+
+.heading {
+    color: #e92;
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid; 
+    padding-top: 4rem;  
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    animation: a 4s ease-in-out 0s infinite;
+}
+
+@keyframes a {
+    50% {color: #090;}
+}
+
+.container {
+    height: 100vh;
+}
+
+    /* Experience et Formations */
+
+#experiences p {
+    text-align: center;
+}
+
+#experiences, #formations {
+    font-style: italic;
+    padding: .5em;
+    color: #0d47a1;
+}
+.annee {
+    color: #090;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+    /* Competences */
+
+#competences .progress {
+    height: 50px;
+    margin-top: 30px;
+    background-color: #777;
+    animation: b 6s ease-in-out 0s infinite;
+}
+
+@keyframes b {
+    50% {background-color: #444;}
+}
+
+    /* langue et centre d'interet */
+
+#langue_parlee li, #centre_d_interet li, #qualites li{
+    color: #0d47a1;
+    list-style-type: none;
+    padding: 1.1em;
+}
+
+#competences .progress-bar {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #3337;
+    overflow-x: visible;
+}
+/* ------- Smartphones et tablettes --------- */
+@media (max-width: 991.98px) {
+    #competences .container {
+        margin-bottom: 10rem !important;
+    }
+    #moi .laptop {
+        display: none;
+    }
+
+    #moi .mobile {
+        background-color: #0d34a1;
+        color: #fff;
+        text-align: center;
+        height: 100vh;
+    }
+
+    #navbar .navbar-brand span img {
+        display: none;
+    } 
+
+    #moi .heading {
+        visibility: hidden;
+    }
+
+    #moi .mobile img {
+        width: 70%;
+        border: 7px solid;
+    }
+
+    #moi .mobile a, #moi .mobile h3 {
+        text-transform: uppercase;
+    }
+
+}
+
+/* ------- PC et TV ------- */
+@media (min-width: 992px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        width: 17em;
+        height: 100vh;
+    }
+    
+    #navbar .navbar-brand img {
+        border: 10px solid;
+    }
+
+    #navbar .navbar-brand {
+        padding: 30px;
+    }
+
+    #navbar .navbar-collapse .navbar-nav {
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    section {
+        margin-left: 30%;
+    }
+    
+    #moi .mobile {
+        display: none;
+    }
+
+    #moi .laptop {
+        padding: 20%;
+        text-align: center; 
+    }
+
+    #moi .laptop .heading {
+        font-size: 4em;
+        color: #93c;
+        border-bottom: 1px solid;
+    }
+
+    #moi .laptop h3 {
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    #moi .laptop h3 {
+        font-size: 30px;
+    }
+
+    #moi .laptop p {
+        font-size: 30px;
+    }
+    
+}
